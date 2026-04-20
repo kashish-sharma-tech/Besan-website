@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFE066"/>
+      <stop offset="30%"  stop-color="#FFD700"/>
+      <stop offset="60%"  stop-color="#C8860A"/>
+      <stop offset="80%"  stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8750A"/>
+    </linearGradient>
+    <linearGradient id="brownGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#5C1A0A"/>
+      <stop offset="100%" stop-color="#3D1005"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Peanut / bean outer gold shape -->
+  <path d="
+    M 100,150
+    C 100,70  170,20  240,30
+    C 270,34  290,50  300,60
+    C 310,50  340,20  390,20
+    C 460,20  520,75  520,150
+    C 520,225 460,280 390,280
+    C 340,280 310,255 300,240
+    C 290,255 265,278 235,280
+    C 160,284 100,230 100,150 Z
+  " fill="url(#goldGrad)" filter="url(#shadow)"/>
+
+  <!-- Peanut inner brown shape (slightly inset) -->
+  <path d="
+    M 118,150
+    C 118,80  182,38  248,46
+    C 274,50  292,64  300,74
+    C 308,64  332,38  386,38
+    C 450,38  502,87  502,150
+    C 502,213 450,262 386,262
+    C 332,262 308,240 300,226
+    C 292,240 268,261 240,263
+    C 172,266 118,220 118,150 Z
+  " fill="url(#brownGrad)"/>
+
+  <!-- NRS text -->
+  <text
+    x="300" y="178"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="120"
+    font-weight="900"
+    fill="white"
+    letter-spacing="-4"
+    style="paint-order: stroke; stroke: rgba(0,0,0,0.25); stroke-width: 3px;"
+  >NRS</text>
+</svg>
